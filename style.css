@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cell:hover {
+    background-color: #d0d0d0;
+    transform: scale(1.05);
+}
+
+.cell.X {
+    color: #ff4d4d; /* Red for X */
+}
+
+.cell.O {
+    color: #4d79ff; /* Blue for O */
+}
+
+#status {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #555;
+}
+
+#resetButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4d79ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#resetButton:hover {
+    background-color: #3a5bbf;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.5); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+.cell.X, .cell.O {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes winLine {
+    0% { transform: scaleX(0); }
+    100% { transform: scaleX(1); }
+}
+
+.win-line {
+    position: absolute;
+    height: 5px;
+    background-color: #333;
+    animation: winLine 0.5s ease-in-out;
+}
+/* Highlight winning cells */
+.cell.win {
+    background-color: #a8e6cf; /* Light green background */
+    animation: winAnimation 0.5s ease-in-out;
+}
+
+@keyframes winAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
