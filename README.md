@@ -1,54 +1,59 @@
-# Tic Tac Toe Game
+# Tic Tac Toe Game - Player vs AI
 
 ## Overview
-This project is a simple implementation of the classic Tic Tac Toe game using HTML, CSS, and JavaScript. The game allows a player to compete against an AI opponent that uses the Minimax algorithm to make optimal moves. The game features a responsive design, animations, and a reset button to start a new game.
+This project is a web-based implementation of the classic **Tic Tac Toe** game, where a player can compete against an AI opponent. The game is built using **HTML**, **CSS**, and **JavaScript**, and features a clean, responsive design with smooth animations and interactive gameplay. The AI opponent uses the **Minimax algorithm**, ensuring it makes optimal moves and provides a challenging experience for the player.
+
+**Play the game here:** [Tic Tac Toe Game](https://soft-puffpuff-b28beb.netlify.app/)
+
+---
 
 ## Features
-- **Player vs AI**: Play against an AI that uses the Minimax algorithm for optimal decision-making.
-- **Responsive Design**: The game is designed to be responsive and works well on different screen sizes.
-- **Animations**: Smooth animations for cell clicks and winning patterns.
-- **Reset Button**: Easily reset the game to start a new match.
-- **Winning Highlight**: Winning cells are highlighted with a light green background and an animation.
+- **Player vs AI**: Play against an intelligent AI that uses the Minimax algorithm to make the best possible moves.
+- **Responsive Design**: The game is designed to work seamlessly on various screen sizes, including desktops, tablets, and mobile devices.
+- **Interactive Gameplay**: Players can click on cells to make their moves, and the AI responds automatically.
+- **Winning Animations**: Winning patterns are highlighted with animations, and the winning cells are marked with a light green background.
+- **Reset Functionality**: A reset button allows players to start a new game at any time.
+- **Turn Indicators**: The game displays whose turn it is (Player or AI) and announces the winner or a draw at the end of the game.
 
-## Files
-- **index.html**: The main HTML file that structures the game board and includes the necessary elements.
-- **style.css**: The CSS file that styles the game, including the board, cells, and animations.
-- **script.js**: The JavaScript file that contains the game logic, including the Minimax algorithm for the AI.
+---
 
 ## How to Play
-1. Open the `index.html` file in your web browser.
-2. The game starts with the player's turn (X). Click on any empty cell to make your move.
-3. The AI (O) will automatically make its move after the player.
-4. The game will announce the winner (either the player or the AI) or declare a draw if no one wins.
-5. Use the "Reset Game" button to start a new game at any time.
+1. Open the game link: [Tic Tac Toe Game](https://soft-puffpuff-b28beb.netlify.app/).
+2. The game starts with the player's turn (represented by **X**).
+3. Click on an empty cell to place your **X**.
+4. The AI (represented by **O**) will automatically make its move.
+5. The game checks for a win or draw after each move.
+6. If a player or the AI wins, the winning cells are highlighted, and the game announces the winner.
+7. If all cells are filled without a winner, the game declares a draw.
+8. Use the "Reset Game" button to start a new game at any time.
 
-## Code Structure
-- **HTML**: The game board is structured using a grid of 9 cells, each with a `data-index` attribute to identify its position.
-- **CSS**: The styles include animations for cell clicks, winning patterns, and hover effects. The winning cells are highlighted with a light green background.
-- **JavaScript**: The game logic includes:
-  - Handling cell clicks and updating the board.
-  - Implementing the Minimax algorithm for the AI's moves.
-  - Checking for a win or draw and updating the game status.
-  - Resetting the game when the reset button is clicked.
+---
 
-## Dependencies
-- This project does not require any external libraries or dependencies. It uses plain HTML, CSS, and JavaScript.
+## Technologies Used
+- **HTML**: Structures the game board and elements.
+- **CSS**: Styles the game, including animations for cell clicks, winning patterns, and hover effects.
+- **JavaScript**: Implements the game logic, including the Minimax algorithm for the AI, win/draw detection, and reset functionality.
 
-## Future Improvements
-- **Multiplayer Mode**: Add a two-player mode where two humans can play against each other.
-- **Difficulty Levels**: Implement different difficulty levels for the AI.
+---
+
+## Future Enhancements
+- **Multiplayer Mode**: Allow two players to play against each other on the same device.
+- **Difficulty Levels**: Add different difficulty levels for the AI (e.g., easy, medium, hard).
 - **Score Tracking**: Keep track of the player's and AI's scores across multiple games.
-- **Mobile Optimization**: Further optimize the game for mobile devices with touch controls.
+- **Mobile Optimization**: Improve touch controls for better mobile gameplay.
+
+---
+
+## How to Run Locally
+1. Clone or download the project files.
+2. Open the `index.html` file in a web browser.
+3. Start playing against the AI!
+
+---
 
 ## License
 This project is open-source and available under the MIT License. Feel free to modify and distribute it as needed.
 
-## Author
-[Ranit Manna]
-
-## Acknowledgments
-- The Minimax algorithm implementation is inspired by various online resources and tutorials on game AI.
-
 ---
 
-Enjoy playing Tic Tac Toe!
+Enjoy the game and challenge yourself against the AI! This project is a great way to learn about web development, game logic, and basic AI algorithms.
